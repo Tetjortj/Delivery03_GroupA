@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3625ac92385a2b46b38d75291708fd4, type: 3}
-  m_Name: NewItem
+  m_Name: NewItem 6
   m_EditorClassIdentifier: 
-  itemName: Berries
-  icon: {fileID: -8931187395312960210, guid: 829cf6f9cc636ac4ca639a1278130d55, type: 3}
+  itemName: 
+  icon: {fileID: 0}
   cost: 0
   type: 0
-  prefab: {fileID: 6353667237274911210, guid: 8ac5ef90668a241458e448e7659fde2e, type: 3}
+  prefab: {fileID: 0}
