@@ -406,10 +406,10 @@ TextureImporter:
       name: OpenmonItemIcons_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 242
-        width: 22
-        height: 27
+        x: 9
+        y: 243
+        width: 20
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: OpenmonItemIcons_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 243
-        width: 21
-        height: 26
+        x: 38
+        y: 244
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -450,10 +450,10 @@ TextureImporter:
       name: OpenmonItemIcons_2
       rect:
         serializedVersion: 2
-        x: 67
-        y: 245
-        width: 25
-        height: 24
+        x: 68
+        y: 246
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -472,10 +472,10 @@ TextureImporter:
       name: OpenmonItemIcons_3
       rect:
         serializedVersion: 2
-        x: 101
-        y: 245
-        width: 21
-        height: 23
+        x: 102
+        y: 246
+        width: 19
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,10 +494,10 @@ TextureImporter:
       name: OpenmonItemIcons_4
       rect:
         serializedVersion: 2
-        x: 131
-        y: 243
-        width: 27
-        height: 25
+        x: 132
+        y: 244
+        width: 25
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -516,10 +516,10 @@ TextureImporter:
       name: OpenmonItemIcons_5
       rect:
         serializedVersion: 2
-        x: 162
-        y: 243
-        width: 28
-        height: 25
+        x: 163
+        y: 244
+        width: 26
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -538,10 +538,10 @@ TextureImporter:
       name: OpenmonItemIcons_6
       rect:
         serializedVersion: 2
-        x: 196
-        y: 243
-        width: 26
-        height: 25
+        x: 197
+        y: 244
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -560,10 +560,10 @@ TextureImporter:
       name: OpenmonItemIcons_7
       rect:
         serializedVersion: 2
-        x: 229
-        y: 245
-        width: 22
-        height: 22
+        x: 230
+        y: 246
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -582,10 +582,10 @@ TextureImporter:
       name: OpenmonItemIcons_8
       rect:
         serializedVersion: 2
-        x: 262
-        y: 247
-        width: 20
-        height: 19
+        x: 263
+        y: 248
+        width: 18
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,10 +604,10 @@ TextureImporter:
       name: OpenmonItemIcons_9
       rect:
         serializedVersion: 2
-        x: 293
-        y: 244
-        width: 23
-        height: 23
+        x: 294
+        y: 245
+        width: 21
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -626,10 +626,10 @@ TextureImporter:
       name: OpenmonItemIcons_10
       rect:
         serializedVersion: 2
-        x: 4
-        y: 210
-        width: 24
-        height: 27
+        x: 5
+        y: 211
+        width: 22
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -648,10 +648,10 @@ TextureImporter:
       name: OpenmonItemIcons_11
       rect:
         serializedVersion: 2
-        x: 33
-        y: 210
-        width: 25
-        height: 30
+        x: 34
+        y: 211
+        width: 23
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -670,10 +670,10 @@ TextureImporter:
       name: OpenmonItemIcons_12
       rect:
         serializedVersion: 2
-        x: 69
-        y: 210
-        width: 22
-        height: 29
+        x: 70
+        y: 211
+        width: 20
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -692,10 +692,10 @@ TextureImporter:
       name: OpenmonItemIcons_13
       rect:
         serializedVersion: 2
-        x: 96
-        y: 209
-        width: 31
-        height: 28
+        x: 97
+        y: 210
+        width: 29
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -714,10 +714,10 @@ TextureImporter:
       name: OpenmonItemIcons_14
       rect:
         serializedVersion: 2
-        x: 131
-        y: 211
-        width: 25
-        height: 25
+        x: 132
+        y: 212
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -736,10 +736,10 @@ TextureImporter:
       name: OpenmonItemIcons_15
       rect:
         serializedVersion: 2
-        x: 164
-        y: 211
-        width: 24
-        height: 25
+        x: 165
+        y: 212
+        width: 22
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -758,10 +758,10 @@ TextureImporter:
       name: OpenmonItemIcons_16
       rect:
         serializedVersion: 2
-        x: 195
-        y: 212
-        width: 26
-        height: 26
+        x: 196
+        y: 213
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -780,10 +780,10 @@ TextureImporter:
       name: OpenmonItemIcons_17
       rect:
         serializedVersion: 2
-        x: 228
-        y: 211
-        width: 26
-        height: 27
+        x: 229
+        y: 212
+        width: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -802,10 +802,10 @@ TextureImporter:
       name: OpenmonItemIcons_18
       rect:
         serializedVersion: 2
-        x: 262
-        y: 211
-        width: 22
-        height: 23
+        x: 263
+        y: 212
+        width: 20
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -824,10 +824,10 @@ TextureImporter:
       name: OpenmonItemIcons_19
       rect:
         serializedVersion: 2
-        x: 292
-        y: 211
-        width: 23
-        height: 25
+        x: 293
+        y: 212
+        width: 21
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -846,10 +846,10 @@ TextureImporter:
       name: OpenmonItemIcons_20
       rect:
         serializedVersion: 2
-        x: 6
-        y: 178
-        width: 20
-        height: 28
+        x: 7
+        y: 179
+        width: 18
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -868,10 +868,10 @@ TextureImporter:
       name: OpenmonItemIcons_21
       rect:
         serializedVersion: 2
-        x: 39
-        y: 178
-        width: 18
-        height: 28
+        x: 40
+        y: 179
+        width: 16
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -890,10 +890,10 @@ TextureImporter:
       name: OpenmonItemIcons_22
       rect:
         serializedVersion: 2
-        x: 67
-        y: 178
-        width: 26
-        height: 27
+        x: 68
+        y: 179
+        width: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -912,10 +912,10 @@ TextureImporter:
       name: OpenmonItemIcons_23
       rect:
         serializedVersion: 2
-        x: 102
-        y: 177
-        width: 19
-        height: 28
+        x: 103
+        y: 178
+        width: 17
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -934,10 +934,10 @@ TextureImporter:
       name: OpenmonItemIcons_24
       rect:
         serializedVersion: 2
-        x: 134
-        y: 178
-        width: 19
-        height: 27
+        x: 135
+        y: 179
+        width: 17
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -956,10 +956,10 @@ TextureImporter:
       name: OpenmonItemIcons_25
       rect:
         serializedVersion: 2
-        x: 162
-        y: 180
-        width: 27
-        height: 26
+        x: 163
+        y: 181
+        width: 25
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -978,10 +978,10 @@ TextureImporter:
       name: OpenmonItemIcons_26
       rect:
         serializedVersion: 2
-        x: 201
-        y: 178
-        width: 15
-        height: 28
+        x: 202
+        y: 179
+        width: 13
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1000,10 +1000,10 @@ TextureImporter:
       name: OpenmonItemIcons_27
       rect:
         serializedVersion: 2
-        x: 234
-        y: 177
-        width: 12
-        height: 29
+        x: 235
+        y: 178
+        width: 10
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1022,10 +1022,10 @@ TextureImporter:
       name: OpenmonItemIcons_28
       rect:
         serializedVersion: 2
-        x: 263
-        y: 179
-        width: 18
-        height: 24
+        x: 264
+        y: 180
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1044,10 +1044,10 @@ TextureImporter:
       name: OpenmonItemIcons_29
       rect:
         serializedVersion: 2
-        x: 295
-        y: 178
-        width: 18
-        height: 27
+        x: 296
+        y: 179
+        width: 16
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1066,10 +1066,10 @@ TextureImporter:
       name: OpenmonItemIcons_30
       rect:
         serializedVersion: 2
-        x: 4
-        y: 145
-        width: 24
-        height: 26
+        x: 5
+        y: 146
+        width: 22
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1088,10 +1088,10 @@ TextureImporter:
       name: OpenmonItemIcons_31
       rect:
         serializedVersion: 2
-        x: 35
-        y: 146
-        width: 28
-        height: 25
+        x: 36
+        y: 147
+        width: 26
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1110,10 +1110,10 @@ TextureImporter:
       name: OpenmonItemIcons_32
       rect:
         serializedVersion: 2
-        x: 64
-        y: 147
-        width: 31
-        height: 26
+        x: 65
+        y: 148
+        width: 29
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1132,10 +1132,10 @@ TextureImporter:
       name: OpenmonItemIcons_33
       rect:
         serializedVersion: 2
-        x: 102
-        y: 146
-        width: 20
-        height: 26
+        x: 103
+        y: 147
+        width: 18
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1154,10 +1154,10 @@ TextureImporter:
       name: OpenmonItemIcons_34
       rect:
         serializedVersion: 2
-        x: 127
-        y: 146
-        width: 34
-        height: 27
+        x: 128
+        y: 147
+        width: 32
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1176,10 +1176,10 @@ TextureImporter:
       name: OpenmonItemIcons_35
       rect:
         serializedVersion: 2
-        x: 164
-        y: 148
-        width: 24
-        height: 24
+        x: 165
+        y: 149
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1198,10 +1198,10 @@ TextureImporter:
       name: OpenmonItemIcons_36
       rect:
         serializedVersion: 2
-        x: 195
-        y: 149
-        width: 26
-        height: 19
+        x: 196
+        y: 150
+        width: 24
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1220,10 +1220,10 @@ TextureImporter:
       name: OpenmonItemIcons_37
       rect:
         serializedVersion: 2
-        x: 230
-        y: 145
-        width: 19
-        height: 30
+        x: 231
+        y: 146
+        width: 17
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1242,10 +1242,10 @@ TextureImporter:
       name: OpenmonItemIcons_38
       rect:
         serializedVersion: 2
-        x: 260
-        y: 145
-        width: 23
-        height: 26
+        x: 261
+        y: 146
+        width: 21
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1264,10 +1264,10 @@ TextureImporter:
       name: OpenmonItemIcons_39
       rect:
         serializedVersion: 2
-        x: 294
-        y: 145
-        width: 21
-        height: 28
+        x: 295
+        y: 146
+        width: 19
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1286,10 +1286,10 @@ TextureImporter:
       name: OpenmonItemIcons_40
       rect:
         serializedVersion: 2
-        x: 1
-        y: 117
-        width: 30
-        height: 23
+        x: 2
+        y: 118
+        width: 28
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1308,10 +1308,10 @@ TextureImporter:
       name: OpenmonItemIcons_41
       rect:
         serializedVersion: 2
-        x: 36
-        y: 115
-        width: 24
-        height: 26
+        x: 37
+        y: 116
+        width: 22
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1330,10 +1330,10 @@ TextureImporter:
       name: OpenmonItemIcons_42
       rect:
         serializedVersion: 2
-        x: 66
-        y: 115
-        width: 28
-        height: 26
+        x: 67
+        y: 116
+        width: 26
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1352,10 +1352,10 @@ TextureImporter:
       name: OpenmonItemIcons_43
       rect:
         serializedVersion: 2
-        x: 101
-        y: 116
-        width: 23
-        height: 24
+        x: 102
+        y: 117
+        width: 21
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1374,10 +1374,10 @@ TextureImporter:
       name: OpenmonItemIcons_44
       rect:
         serializedVersion: 2
-        x: 131
-        y: 114
-        width: 26
-        height: 25
+        x: 132
+        y: 115
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1396,10 +1396,10 @@ TextureImporter:
       name: OpenmonItemIcons_45
       rect:
         serializedVersion: 2
-        x: 164
-        y: 115
-        width: 24
-        height: 26
+        x: 165
+        y: 116
+        width: 22
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1418,10 +1418,10 @@ TextureImporter:
       name: OpenmonItemIcons_46
       rect:
         serializedVersion: 2
-        x: 192
-        y: 112
-        width: 31
-        height: 32
+        x: 193
+        y: 113
+        width: 29
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1440,10 +1440,10 @@ TextureImporter:
       name: OpenmonItemIcons_47
       rect:
         serializedVersion: 2
-        x: 225
-        y: 112
-        width: 25
-        height: 29
+        x: 226
+        y: 113
+        width: 23
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1462,10 +1462,10 @@ TextureImporter:
       name: OpenmonItemIcons_48
       rect:
         serializedVersion: 2
-        x: 259
-        y: 116
-        width: 26
-        height: 25
+        x: 260
+        y: 117
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1484,10 +1484,10 @@ TextureImporter:
       name: OpenmonItemIcons_49
       rect:
         serializedVersion: 2
-        x: 289
-        y: 117
-        width: 30
-        height: 24
+        x: 290
+        y: 118
+        width: 28
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1506,10 +1506,10 @@ TextureImporter:
       name: OpenmonItemIcons_50
       rect:
         serializedVersion: 2
-        x: 4
-        y: 85
-        width: 26
-        height: 25
+        x: 5
+        y: 86
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1528,10 +1528,10 @@ TextureImporter:
       name: OpenmonItemIcons_51
       rect:
         serializedVersion: 2
-        x: 37
-        y: 81
-        width: 21
-        height: 30
+        x: 38
+        y: 82
+        width: 19
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1550,10 +1550,10 @@ TextureImporter:
       name: OpenmonItemIcons_52
       rect:
         serializedVersion: 2
-        x: 70
-        y: 82
-        width: 20
-        height: 28
+        x: 71
+        y: 83
+        width: 18
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1572,10 +1572,10 @@ TextureImporter:
       name: OpenmonItemIcons_53
       rect:
         serializedVersion: 2
-        x: 103
-        y: 82
-        width: 20
-        height: 27
+        x: 104
+        y: 83
+        width: 18
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1594,10 +1594,10 @@ TextureImporter:
       name: OpenmonItemIcons_54
       rect:
         serializedVersion: 2
-        x: 135
-        y: 81
-        width: 18
-        height: 30
+        x: 136
+        y: 82
+        width: 16
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1616,10 +1616,10 @@ TextureImporter:
       name: OpenmonItemIcons_55
       rect:
         serializedVersion: 2
-        x: 163
-        y: 82
-        width: 26
-        height: 27
+        x: 164
+        y: 83
+        width: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1638,10 +1638,10 @@ TextureImporter:
       name: OpenmonItemIcons_56
       rect:
         serializedVersion: 2
-        x: 197
-        y: 84
-        width: 23
-        height: 22
+        x: 198
+        y: 85
+        width: 21
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1660,10 +1660,10 @@ TextureImporter:
       name: OpenmonItemIcons_57
       rect:
         serializedVersion: 2
-        x: 231
-        y: 82
-        width: 18
-        height: 28
+        x: 232
+        y: 83
+        width: 16
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1682,10 +1682,10 @@ TextureImporter:
       name: OpenmonItemIcons_58
       rect:
         serializedVersion: 2
-        x: 257
-        y: 82
-        width: 29
-        height: 26
+        x: 258
+        y: 83
+        width: 27
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1704,10 +1704,10 @@ TextureImporter:
       name: OpenmonItemIcons_59
       rect:
         serializedVersion: 2
-        x: 292
-        y: 82
-        width: 26
-        height: 27
+        x: 293
+        y: 83
+        width: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1726,10 +1726,10 @@ TextureImporter:
       name: OpenmonItemIcons_60
       rect:
         serializedVersion: 2
-        x: 3
-        y: 49
-        width: 25
-        height: 28
+        x: 4
+        y: 50
+        width: 23
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1748,10 +1748,10 @@ TextureImporter:
       name: OpenmonItemIcons_61
       rect:
         serializedVersion: 2
-        x: 35
-        y: 50
-        width: 26
-        height: 27
+        x: 36
+        y: 51
+        width: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1770,10 +1770,10 @@ TextureImporter:
       name: OpenmonItemIcons_62
       rect:
         serializedVersion: 2
-        x: 66
-        y: 55
-        width: 28
-        height: 19
+        x: 67
+        y: 56
+        width: 26
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1792,10 +1792,10 @@ TextureImporter:
       name: OpenmonItemIcons_63
       rect:
         serializedVersion: 2
-        x: 100
-        y: 51
-        width: 25
-        height: 26
+        x: 101
+        y: 52
+        width: 23
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1814,9 +1814,9 @@ TextureImporter:
       name: OpenmonItemIcons_64
       rect:
         serializedVersion: 2
-        x: 130
-        y: 53
-        width: 28
+        x: 166
+        y: 54
+        width: 20
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1836,10 +1836,10 @@ TextureImporter:
       name: OpenmonItemIcons_65
       rect:
         serializedVersion: 2
-        x: 165
-        y: 53
-        width: 22
-        height: 22
+        x: 196
+        y: 51
+        width: 26
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1858,10 +1858,10 @@ TextureImporter:
       name: OpenmonItemIcons_66
       rect:
         serializedVersion: 2
-        x: 195
-        y: 50
-        width: 28
-        height: 25
+        x: 228
+        y: 53
+        width: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1880,10 +1880,10 @@ TextureImporter:
       name: OpenmonItemIcons_67
       rect:
         serializedVersion: 2
-        x: 227
-        y: 52
-        width: 21
-        height: 22
+        x: 243
+        y: 73
+        width: 5
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1902,10 +1902,10 @@ TextureImporter:
       name: OpenmonItemIcons_68
       rect:
         serializedVersion: 2
-        x: 242
-        y: 72
-        width: 7
-        height: 7
+        x: 247
+        y: 68
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1924,10 +1924,10 @@ TextureImporter:
       name: OpenmonItemIcons_69
       rect:
         serializedVersion: 2
-        x: 246
-        y: 67
-        width: 8
-        height: 8
+        x: 263
+        y: 51
+        width: 19
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1946,10 +1946,10 @@ TextureImporter:
       name: OpenmonItemIcons_70
       rect:
         serializedVersion: 2
-        x: 262
+        x: 289
         y: 50
-        width: 21
-        height: 28
+        width: 24
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1968,10 +1968,10 @@ TextureImporter:
       name: OpenmonItemIcons_71
       rect:
         serializedVersion: 2
-        x: 288
-        y: 49
+        x: 131
+        y: 54
         width: 26
-        height: 28
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1990,10 +1990,10 @@ TextureImporter:
       name: OpenmonItemIcons_72
       rect:
         serializedVersion: 2
-        x: 2
-        y: 25
-        width: 28
-        height: 16
+        x: 3
+        y: 26
+        width: 26
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2012,10 +2012,10 @@ TextureImporter:
       name: OpenmonItemIcons_73
       rect:
         serializedVersion: 2
-        x: 36
-        y: 21
-        width: 26
-        height: 23
+        x: 37
+        y: 22
+        width: 24
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2034,10 +2034,10 @@ TextureImporter:
       name: OpenmonItemIcons_74
       rect:
         serializedVersion: 2
-        x: 70
-        y: 19
-        width: 21
-        height: 26
+        x: 71
+        y: 20
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2056,10 +2056,10 @@ TextureImporter:
       name: OpenmonItemIcons_75
       rect:
         serializedVersion: 2
-        x: 98
-        y: 17
-        width: 25
-        height: 29
+        x: 99
+        y: 18
+        width: 23
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2078,10 +2078,10 @@ TextureImporter:
       name: OpenmonItemIcons_76
       rect:
         serializedVersion: 2
-        x: 134
-        y: 21
-        width: 23
-        height: 25
+        x: 135
+        y: 22
+        width: 21
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2100,10 +2100,10 @@ TextureImporter:
       name: OpenmonItemIcons_77
       rect:
         serializedVersion: 2
-        x: 166
-        y: 22
-        width: 21
-        height: 22
+        x: 167
+        y: 23
+        width: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2122,10 +2122,10 @@ TextureImporter:
       name: OpenmonItemIcons_78
       rect:
         serializedVersion: 2
-        x: 195
-        y: 16
-        width: 26
-        height: 32
+        x: 196
+        y: 17
+        width: 24
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2144,10 +2144,10 @@ TextureImporter:
       name: OpenmonItemIcons_79
       rect:
         serializedVersion: 2
-        x: 227
-        y: 16
-        width: 26
-        height: 32
+        x: 228
+        y: 17
+        width: 24
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2166,10 +2166,10 @@ TextureImporter:
       name: OpenmonItemIcons_80
       rect:
         serializedVersion: 2
-        x: 259
-        y: 17
-        width: 26
-        height: 30
+        x: 260
+        y: 18
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2188,10 +2188,10 @@ TextureImporter:
       name: OpenmonItemIcons_81
       rect:
         serializedVersion: 2
-        x: 288
-        y: 16
-        width: 32
-        height: 32
+        x: 289
+        y: 17
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2210,10 +2210,10 @@ TextureImporter:
       name: OpenmonItemIcons_82
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 1
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2232,10 +2232,10 @@ TextureImporter:
       name: OpenmonItemIcons_83
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
+        x: 17
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2254,10 +2254,10 @@ TextureImporter:
       name: OpenmonItemIcons_84
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
+        x: 33
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2276,10 +2276,10 @@ TextureImporter:
       name: OpenmonItemIcons_85
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
+        x: 49
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2298,10 +2298,10 @@ TextureImporter:
       name: OpenmonItemIcons_86
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
+        x: 65
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2320,10 +2320,10 @@ TextureImporter:
       name: OpenmonItemIcons_87
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
+        x: 81
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2342,10 +2342,10 @@ TextureImporter:
       name: OpenmonItemIcons_88
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
+        x: 97
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2364,10 +2364,10 @@ TextureImporter:
       name: OpenmonItemIcons_89
       rect:
         serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
+        x: 113
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2386,10 +2386,10 @@ TextureImporter:
       name: OpenmonItemIcons_90
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
+        x: 129
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2408,10 +2408,10 @@ TextureImporter:
       name: OpenmonItemIcons_91
       rect:
         serializedVersion: 2
-        x: 144
-        y: 0
-        width: 16
-        height: 16
+        x: 145
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2430,10 +2430,10 @@ TextureImporter:
       name: OpenmonItemIcons_92
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 16
-        height: 16
+        x: 161
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2452,10 +2452,10 @@ TextureImporter:
       name: OpenmonItemIcons_93
       rect:
         serializedVersion: 2
-        x: 176
-        y: 0
-        width: 16
-        height: 16
+        x: 177
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2474,10 +2474,10 @@ TextureImporter:
       name: OpenmonItemIcons_94
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 16
-        height: 16
+        x: 193
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2496,10 +2496,10 @@ TextureImporter:
       name: OpenmonItemIcons_95
       rect:
         serializedVersion: 2
-        x: 208
-        y: 0
-        width: 16
-        height: 16
+        x: 209
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2518,10 +2518,10 @@ TextureImporter:
       name: OpenmonItemIcons_96
       rect:
         serializedVersion: 2
-        x: 224
-        y: 0
-        width: 16
-        height: 16
+        x: 225
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2540,10 +2540,10 @@ TextureImporter:
       name: OpenmonItemIcons_97
       rect:
         serializedVersion: 2
-        x: 240
-        y: 0
-        width: 16
-        height: 16
+        x: 241
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2562,10 +2562,10 @@ TextureImporter:
       name: OpenmonItemIcons_98
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 16
-        height: 16
+        x: 257
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2584,10 +2584,10 @@ TextureImporter:
       name: OpenmonItemIcons_99
       rect:
         serializedVersion: 2
-        x: 272
-        y: 0
-        width: 16
-        height: 16
+        x: 273
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2606,10 +2606,10 @@ TextureImporter:
       name: OpenmonItemIcons_100
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
-        width: 16
-        height: 16
+        x: 289
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2628,10 +2628,10 @@ TextureImporter:
       name: OpenmonItemIcons_101
       rect:
         serializedVersion: 2
-        x: 304
-        y: 0
-        width: 16
-        height: 16
+        x: 305
+        y: 1
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2650,7 +2650,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 741223c2a927a0f48985fd414db95fe3
     internalID: 0
     vertices: []
     indices: 
