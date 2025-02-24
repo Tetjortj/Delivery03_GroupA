@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3625ac92385a2b46b38d75291708fd4, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f9884d1f8c99a941ab2a468c4a5afc8, type: 3}
   m_Name: Egg
   m_EditorClassIdentifier: 
-  itemName: Egg
-  icon: {fileID: -4677519006279978911, guid: 829cf6f9cc636ac4ca639a1278130d55, type: 3}
-  cost: 0
-  type: 0
-  prefab: {fileID: 2196435883275804744, guid: 9ac1cd7692063b64a867df4d342b0aa7, type: 3}
+  Name: Egg
+  ImageUI: {fileID: 0}
+  IsStackable: 0
+  EnergyPoints: 0

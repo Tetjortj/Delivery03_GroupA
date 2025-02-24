@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3625ac92385a2b46b38d75291708fd4, type: 3}
+  m_Script: {fileID: 11500000, guid: e4f9d25fe6a68a149b2788a2096523f4, type: 3}
   m_Name: Magnet
   m_EditorClassIdentifier: 
-  itemName: Magnet
-  icon: {fileID: 901476638326135716, guid: 829cf6f9cc636ac4ca639a1278130d55, type: 3}
-  cost: 0
-  type: 2
-  prefab: {fileID: 2417852769510476591, guid: 4853ac5e6037a7845bbb49cb11e7731a, type: 3}
+  Name: Magnet
+  ImageUI: {fileID: 901476638326135716, guid: 829cf6f9cc636ac4ca639a1278130d55, type: 3}
+  IsStackable: 0
+  damage: 0
