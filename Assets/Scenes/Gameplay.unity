@@ -581,13 +581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &87389510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1674,13 +1667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &449060607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1942,6 +1928,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2023,6 +2010,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 046d3978b80361b43be864e05ba762c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &544244712
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,13 +2072,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &544244715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2169,13 +2161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &562612620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2463,13 +2448,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &657185625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2862,13 +2840,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &783245076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2958,13 +2929,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &824463299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4216,13 +4180,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1054596517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4615,13 +4572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1108076711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5403,13 +5353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1221914317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5911,13 +5854,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1335868163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6434,13 +6370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1414318551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6530,13 +6459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1418869538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7201,13 +7123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1519987964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7297,13 +7212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1525835597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7824,13 +7732,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1611607096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8148,13 +8049,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1673177482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8469,13 +8363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1738059849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8879,13 +8766,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1903364680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9368,13 +9248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1513849258e646967d32b4e0bcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  quantity: 0
-  sprite: {fileID: 0}
-  cost: 0
-  isFull: 0
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
 --- !u!114 &1996703723
 MonoBehaviour:
   m_ObjectHideFlags: 0
