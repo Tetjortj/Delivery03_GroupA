@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3625ac92385a2b46b38d75291708fd4, type: 3}
-  m_Name: NewItem 8
+  m_Name: Book
   m_EditorClassIdentifier: 
-  itemName: 
-  icon: {fileID: 0}
+  itemName: Book
+  icon: {fileID: -858860364860501251, guid: 829cf6f9cc636ac4ca639a1278130d55, type: 3}
   cost: 0
-  type: 0
-  prefab: {fileID: 0}
+  type: 2
+  prefab: {fileID: 4448172023138058434, guid: 9bde8957a794a8642b273a776e4f3be7, type: 3}

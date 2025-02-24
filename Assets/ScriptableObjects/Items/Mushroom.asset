@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3625ac92385a2b46b38d75291708fd4, type: 3}
-  m_Name: NewItem 19
+  m_Name: Mushroom
   m_EditorClassIdentifier: 
-  itemName: 
-  icon: {fileID: 0}
+  itemName: Mushroom
+  icon: {fileID: -7690564650040327016, guid: 829cf6f9cc636ac4ca639a1278130d55, type: 3}
   cost: 0
   type: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 6082418268884139021, guid: 30d5229c50b70134ab0442e7dac5b42d, type: 3}

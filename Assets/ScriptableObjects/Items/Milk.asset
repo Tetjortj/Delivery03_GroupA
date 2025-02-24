@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3625ac92385a2b46b38d75291708fd4, type: 3}
-  m_Name: NewItem 1
+  m_Name: Milk
   m_EditorClassIdentifier: 
-  itemName: 
-  icon: {fileID: 0}
+  itemName: Milk
+  icon: {fileID: -7877883945263846259, guid: 829cf6f9cc636ac4ca639a1278130d55, type: 3}
   cost: 0
-  type: 0
-  prefab: {fileID: 0}
+  type: 1
+  prefab: {fileID: 1514457521899330962, guid: f816b2542e8fae74eab2c9d7894bd86d, type: 3}
