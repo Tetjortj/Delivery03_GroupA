@@ -8,11 +8,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 15aba33a732888a438e958e11709dddd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Gameplay.unity
     guid: e56604562484fd14bae00a4fd9d3d815
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: 52905077d34afe64b9c5d7de67e55282
-  m_configObjects: {}
+  - enabled: 0
+    path: Assets/Scenes/Spanish.unity
+    guid: e05b9814023ae7347a26df069406697f
+  - enabled: 1
+    path: Assets/Scenes/Test.unity
+    guid: 377bb9207df7d6d47a8aa054f23678ba
+  - enabled: 0
+    path: Assets/Scenes/Catalan.unity
+    guid: 883841fba7b835e4f9497873e6e8a539
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 4efa50362c3c5bf4bb09405e46a2f566,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: e3dc70c81b647b14cb695e65f149248d,
+      type: 2}
   m_UseUCBPForAssetBundles: 0
