@@ -55,13 +55,15 @@ public class InventoryUI : MonoBehaviour
 
     private GameObject AddSlot(ItemSlot inventorySlot)
     {
-        // Add a new visual slot UI in inventory UI, using provided prefab
         var element = GameObject.Instantiate(SlotPrefab, Vector3.zero, Quaternion.identity, transform);
-        
-        element.Initialize(inventorySlot, this);
 
+        // Ajustar el tamaño del slotPrefab si es necesario
+        element.transform.localScale = new Vector3(0.8f, 0.8f, 1f); // Reduce el tamaño al 80%
+
+        element.Initialize(inventorySlot, this);
         return element.gameObject;
     }
+
 
     public void UseItem(ItemBase item)
     {
