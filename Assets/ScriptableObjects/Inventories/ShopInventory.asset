@@ -12,30 +12,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ffbdb9d888c1d04fac9fa8cb9f296b2, type: 3}
   m_Name: ShopInventory
   m_EditorClassIdentifier: 
-  Slots:
-  - Item: {fileID: 11400000, guid: 6a3767f73c454e64886c079709e1e3b3, type: 2}
-    Amount: 0
-  - Item: {fileID: 11400000, guid: 9388cbb2b5a4ff34c9ab497b9a3032c2, type: 2}
-    Amount: 7
-  - Item: {fileID: 11400000, guid: 911c9b95835cc2e4d89481900ecdc0ff, type: 2}
-    Amount: 2
+  slots:
   - Item: {fileID: 11400000, guid: 7336e30e41b5c2942a5d6daf302f4ad6, type: 2}
     Amount: 0
+  - Item: {fileID: 11400000, guid: 69d64dce4e0cff641a017c8f57831fd6, type: 2}
+    Amount: 0
   - Item: {fileID: 11400000, guid: 7d6e3203119b7a54995a1e927e9169eb, type: 2}
-    Amount: 5
+    Amount: 0
+  - Item: {fileID: 11400000, guid: 6a3767f73c454e64886c079709e1e3b3, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: 714dcf931af6e3b46916268e0d129ffa, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: 9388cbb2b5a4ff34c9ab497b9a3032c2, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: 911c9b95835cc2e4d89481900ecdc0ff, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: 9c87461b61ee9824ca2e39b6129ccf2e, type: 2}
+    Amount: 0
   - Item: {fileID: 11400000, guid: fb17f83ee4e84f14eb844f6d6bb6a136, type: 2}
-    Amount: 1
+    Amount: 0
+  - Item: {fileID: 11400000, guid: c4872c21c95f9534dbcd0df2ca6917a6, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: 964cd450cc4ae874192fa7f248881adf, type: 2}
+    Amount: 0
   - Item: {fileID: 11400000, guid: a927b00c77d5a1f4385e97cf86d9a463, type: 2}
     Amount: 0
-  - Item: {fileID: 11400000, guid: 72682a934932b92468d01acd7cf7f78b, type: 2}
-    Amount: 4
-  - Item: {fileID: 11400000, guid: cd2fa290bed77a74f88dafcc8a906e02, type: 2}
-    Amount: 5
+  - Item: {fileID: 11400000, guid: ab5c3895602d1c34688ad887a540090b, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: b2c6707357090a14690244aff2bafd95, type: 2}
+    Amount: 0
   - Item: {fileID: 11400000, guid: bb96ff0764c29ac46bdc87069aefb60e, type: 2}
-    Amount: 3
-  - Item: {fileID: 11400000, guid: 07e877706253bde43ac042fb2c9e0c1f, type: 2}
-    Amount: 1
+    Amount: 0
   - Item: {fileID: 11400000, guid: ab8e0914667688e498749ae8be2095d5, type: 2}
-    Amount: 10
+    Amount: 0
   - Item: {fileID: 11400000, guid: c5d2a8a86d574a94ca399e3b2063bc83, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: fbdab4aae7a9f074885a57cd436f1583, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: 96218f88b27c1894883059a2bfee304e, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: cd2fa290bed77a74f88dafcc8a906e02, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: deb3bbc71d7c2b2438f1008661cdb0cb, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: 07e877706253bde43ac042fb2c9e0c1f, type: 2}
+    Amount: 0
+  - Item: {fileID: 11400000, guid: 72682a934932b92468d01acd7cf7f78b, type: 2}
     Amount: 0

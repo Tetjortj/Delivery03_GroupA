@@ -1,22 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewInventory", menuName = "Inventory System/Inventory")]
 public class Inventory : ScriptableObject
 {
-    // NOTE: One slot can contain multiple items of one type
-
     [SerializeField]
-    List<ItemSlot> Slots;
-    public int Length => Slots.Count;
+    private List<ItemSlot> slots = new List<ItemSlot>();
 
+    public int Length => slots.Count;
     public Action OnInventoryChange;
+
+    private void OnEnable()
+    {
+        if (slots == null) slots = new List<ItemSlot>();
+    }
+
+    public List<ItemSlot> GetSlots()
+    {
+        return slots;
+    }
 
     public void AddItem(ItemBase item)
     {
-        // Lazy initialization of slots list
-        if (Slots == null) Slots = new List<ItemSlot>();
+        if (slots == null) slots = new List<ItemSlot>();
 
         var slot = GetSlot(item);
 
@@ -27,7 +34,7 @@ public class Inventory : ScriptableObject
         else
         {
             slot = new ItemSlot(item);
-            Slots.Add(slot);
+            slots.Add(slot);
         }
 
         OnInventoryChange?.Invoke();
@@ -35,7 +42,7 @@ public class Inventory : ScriptableObject
 
     public void RemoveItem(ItemBase item)
     {
-        if (Slots == null) return;
+        if (slots == null) return;
 
         var slot = GetSlot(item);
 
@@ -50,14 +57,14 @@ public class Inventory : ScriptableObject
 
     private void RemoveSlot(ItemSlot slot)
     {
-        Slots.Remove(slot);
+        slots.Remove(slot);
     }
 
     private ItemSlot GetSlot(ItemBase item)
     {
-        for (int i = 0; i < Slots.Count; i++)
+        for (int i = 0; i < slots.Count; i++)
         {
-            if (Slots[i].HasItem(item)) return Slots[i];
+            if (slots[i].HasItem(item)) return slots[i];
         }
 
         return null;
@@ -65,6 +72,6 @@ public class Inventory : ScriptableObject
 
     public ItemSlot GetSlot(int i)
     {
-        return Slots[i];
+        return slots[i];
     }
 }
