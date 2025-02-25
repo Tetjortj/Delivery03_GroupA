@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3625ac92385a2b46b38d75291708fd4, type: 3}
+  m_Script: {fileID: 11500000, guid: b8e81028e8ec0fa4b9857251ef0941ae, type: 3}
   m_Name: Soda
   m_EditorClassIdentifier: 
-  itemName: Soda
-  icon: {fileID: 6097864426945678345, guid: 829cf6f9cc636ac4ca639a1278130d55, type: 3}
-  cost: 0
-  type: 1
-  prefab: {fileID: 4382950451710078038, guid: 09aa3548e2a85314d8728666dbf7a1bf, type: 3}
+  Name: Soda
+  ImageUI: {fileID: 1224066835246867524, guid: 829cf6f9cc636ac4ca639a1278130d55, type: 3}
+  IsStackable: 0
+  HealthPoints: 0

@@ -524,12 +524,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 62575995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bedcafeead13d084a917070031e2d1e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 69a7379f634020248a8526bfa2f57c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shopInventory: {fileID: 11400000, guid: aa5af6a26a306ef479b4b3acaeedf899, type: 2}
   shopContainer: {fileID: 2123597841}
-  shopSlotPrefab: {fileID: 4631792830529883637, guid: 740961fd053aa734aac4b96bab7a4dc6,
+  shopSlotPrefab: {fileID: 4176061043146347162, guid: fef6959752d0926428bd638d6859d7b5,
     type: 3}
 --- !u!1 &87389507
 GameObject:
