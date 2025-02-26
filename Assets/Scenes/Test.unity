@@ -678,7 +678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96bab9da5f6acd34abdf353d71406d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Inventory: {fileID: 11400000, guid: aa5af6a26a306ef479b4b3acaeedf899, type: 2}
+  Inventory: {fileID: 0}
   SlotPrefab: {fileID: 234651220, guid: fef6959752d0926428bd638d6859d7b5, type: 3}
   IsShopInventory: 1
 --- !u!1 &488014498
