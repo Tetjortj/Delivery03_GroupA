@@ -9,7 +9,6 @@ public class Inventory : ScriptableObject
     [SerializeField]
     private List<ItemSlot> slots = new List<ItemSlot>();
 
-    // Guarda una copia profunda de los slots originales (solo se establece la primera vez)
     private List<ItemSlot> initialSlots = new List<ItemSlot>();
 
     public int Length => slots.Count;
@@ -20,7 +19,6 @@ public class Inventory : ScriptableObject
         if (slots == null)
             slots = new List<ItemSlot>();
 
-        // Solo guarda la copia inicial si aún no se ha hecho
         if (initialSlots.Count == 0)
         {
             initialSlots = slots.Select(s => new ItemSlot(s.Item)).ToList();
@@ -80,13 +78,11 @@ public class Inventory : ScriptableObject
         return slots[i];
     }
 
-    // Restaura el inventario a su estado original (la copia guardada en initialSlots)
     public void ResetInventory()
     {
         slots.Clear();
         foreach (var slot in initialSlots)
         {
-            // Se hace una copia nueva de cada slot
             slots.Add(new ItemSlot(slot.Item));
         }
         OnInventoryChange?.Invoke();
