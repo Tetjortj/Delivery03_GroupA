@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInventory : MonoBehaviour, IPickUp
+public class PlayerWalletUI : MonoBehaviour, IPickUp
 {
     public Inventory Inventory;
 

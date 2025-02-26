@@ -6,24 +6,21 @@ using UnityEngine.UI;
 
 public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    // NOTE: Inventory UI slots support drag&drop,
-    // implementing the Unity provided interfaces by events system
-
     public Image Image;
     public TextMeshProUGUI AmountText;
 
     private Canvas _canvas;
-    private GraphicRaycaster _raycaster;
     private Transform _parent;
     private ItemBase _item;
     private InventoryUI _inventory;
+    private GraphicRaycaster _raycaster;
 
     public void Initialize(ItemSlot slot, InventoryUI inventory)
     {
         Image.sprite = slot.Item.ImageUI;
         Image.SetNativeSize();
 
-        AmountText.text = slot.Amount.ToString();
+        AmountText.text = slot.Amount > 1 ? "x" + slot.Amount.ToString() : "";
         AmountText.enabled = slot.Amount > 1;
 
         _item = slot.Item;
@@ -34,52 +31,61 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     {
         _parent = transform.parent;
 
-        // Start moving object from the beginning!
-        transform.localPosition += new Vector3(eventData.delta.x, eventData.delta.y, 0);
-        
-        // We need a few references from UI
+        // Verificar si _canvas ya está asignado
         if (!_canvas)
         {
             _canvas = GetComponentInParent<Canvas>();
+
+            if (_canvas == null)
+            {
+                Debug.LogError("❌ No se encontró un Canvas en los padres del objeto.");
+                return;
+            }
+
             _raycaster = _canvas.GetComponent<GraphicRaycaster>();
         }
-        
-        // Change parent of our item to the canvas
+
+        // Mover objeto al Canvas
         transform.SetParent(_canvas.transform, true);
-        
-        // And set it as last child to be rendered on top of UI
         transform.SetAsLastSibling();
     }
 
+
     public void OnDrag(PointerEventData eventData)
     {
-        // Moving object around screen using mouse delta
-        transform.localPosition += new Vector3(eventData.delta.x, eventData.delta.y, 0);
+        transform.position = Input.mousePosition;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        // Find scene objects colliding with mouse point on end dragging
-        RaycastHit2D hitData = Physics2D.GetRayIntersection(Camera.main.ScreenPointToRay(Input.mousePosition));
-
-        if (hitData)
+        PointerEventData pointerData = new PointerEventData(EventSystem.current)
         {
-            Debug.Log("Drop over object: " + hitData.collider.gameObject.name);
+            position = Input.mousePosition
+        };
 
-            var consumer = hitData.collider.GetComponent<IConsume>();
-            bool consumable = _item is ConsumableItem;
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(pointerData, results);
 
-            if ((consumer != null) && consumable)
+        foreach (var result in results)
+        {
+            InventoryUI targetInventoryUI = result.gameObject.GetComponentInParent<InventoryUI>();
+
+            if (targetInventoryUI != null && targetInventoryUI.Inventory != _inventory)
             {
-                (_item as ConsumableItem).Use(consumer);
-                _inventory.UseItem(_item);
+                _inventory.Inventory.RemoveItem(_item);
+                targetInventoryUI.Inventory.AddItem(_item);
+
+                _inventory.UpdateInventory();
+                targetInventoryUI.UpdateInventory();
+
+                Destroy(gameObject);
+                return;
             }
         }
 
-        // Changing parent back to slot
-        transform.SetParent(_parent.transform);
-
-        // And centering item position
+        transform.SetParent(_parent);
         transform.localPosition = Vector3.zero;
     }
+
 }
+
