@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: Ending
     m_Metadata:
       m_Items: []
+  - m_Id: 225980828479488
+    m_Key: NewGame
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
