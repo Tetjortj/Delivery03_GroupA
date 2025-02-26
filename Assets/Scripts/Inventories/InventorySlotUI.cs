@@ -17,6 +17,7 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     // Objeto que se usará para resaltar el slot
     public Image highlightImage;
+    public TextMeshProUGUI PriceText;
 
     // Slot actualmente seleccionado (estático para poder deseleccionar el anterior)
     public static InventorySlotUI currentlySelectedSlot;
@@ -32,6 +33,16 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         AmountText.text = slot.Amount > 1 ? "x" + slot.Amount.ToString() : "";
         AmountText.enabled = slot.Amount > 1;
+
+        if (inventory.IsShopInventory)
+        {
+            PriceText.text = "$" + slot.Item.Cost.ToString();
+            PriceText.enabled = true;
+        }
+        else
+        {
+            PriceText.enabled = false;
+        }
 
         _item = slot.Item;
         _inventory = inventory;
