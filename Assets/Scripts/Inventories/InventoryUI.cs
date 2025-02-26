@@ -13,6 +13,11 @@ public class InventoryUI : MonoBehaviour
 
     void Start()
     {
+        playerWallet = FindObjectOfType<PlayerWallet>();
+        if (playerWallet == null)
+        {
+            Debug.LogError("❌ No se encontró un PlayerWallet en la escena.");
+        }
         // Si es el inventario de la tienda, asigna la copia runtime desde ShopManager y resetea
         if (IsShopInventory)
         {
@@ -84,55 +89,58 @@ public class InventoryUI : MonoBehaviour
 
     public void BuyItem(ItemBase item)
     {
-        // Asegúrate de tener asignado el PlayerWallet
+        // Solo compramos si este UI es la tienda
+        if (!IsShopInventory) return;
+
         if (playerWallet == null)
         {
             Debug.LogError("❌ PlayerWallet no está asignado.");
             return;
         }
 
-        // Verifica que el jugador pueda costear el item
+        // Verificamos que el jugador pueda costear el item
         if (playerWallet.CanAfford(item.Cost))
         {
-            // Descuenta el costo del dinero del jugador
+            // Descontamos el dinero
             playerWallet.SpendMoney(item.Cost);
 
-            // Agrega el item al inventario del jugador.
-            // Nota: No removemos el item de la tienda, ya que se supone que siempre debe estar visible.
-            InventoryUI playerInventoryUI = FindObjectsOfType<InventoryUI>().First(i => !i.IsShopInventory);
-            playerInventoryUI.Inventory.AddItem(item);
+            // Si quieres que el item NO desaparezca de la tienda, no lo quites:
+            // Inventory.RemoveItem(item);
 
-            // Actualiza las interfaces
+            // Agregamos el item al inventario del jugador
+            FindObjectsOfType<InventoryUI>().First(i => !i.IsShopInventory).Inventory.AddItem(item);
+
+            // Refrescamos la interfaz
             UpdateInventory();
             playerWallet.UpdateMoneyUI();
         }
         else
         {
-            Debug.Log("No tienes suficiente dinero para comprar este item.");
+            Debug.Log("No tienes suficiente dinero.");
         }
     }
 
     public void SellItem(ItemBase item)
     {
-        // Asegúrate de tener asignado el PlayerWallet
+        // Solo vendemos si este UI es el inventario del jugador
+        if (IsShopInventory) return;
+
         if (playerWallet == null)
         {
             Debug.LogError("❌ PlayerWallet no está asignado.");
             return;
         }
 
-        // Al vender, se otorga la mitad del costo original
-        int sellPrice = item.Cost / 2;
-        playerWallet.EarnMoney(sellPrice);
+        // Gana la mitad del coste
+        playerWallet.EarnMoney(item.Cost / 2);
 
         // Remueve el item del inventario del jugador
         Inventory.RemoveItem(item);
 
-        // (Opcional) Agrega el item de vuelta al inventario de la tienda
-        InventoryUI shopInventoryUI = FindObjectsOfType<InventoryUI>().First(i => i.IsShopInventory);
-        shopInventoryUI.Inventory.AddItem(item);
+        // Lo añade al inventario de la tienda
+        FindObjectsOfType<InventoryUI>().First(i => i.IsShopInventory).Inventory.AddItem(item);
 
-        // Actualiza la UI y el dinero mostrado
+        // Refrescamos la interfaz
         UpdateInventory();
         playerWallet.UpdateMoneyUI();
     }

@@ -70,21 +70,34 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         foreach (var result in results)
         {
+            // Obtenemos el InventoryUI de la zona sobre la que se soltó
             InventoryUI targetInventoryUI = result.gameObject.GetComponentInParent<InventoryUI>();
 
-            if (targetInventoryUI != null && targetInventoryUI.Inventory != _inventory)
+            // Si encontramos un inventario distinto del nuestro...
+            if (targetInventoryUI != null && targetInventoryUI != _inventory)
             {
-                _inventory.Inventory.RemoveItem(_item);
-                targetInventoryUI.Inventory.AddItem(_item);
+                // Si arrastramos DESDE la tienda (source) HACIA el inventario del jugador (target), entonces COMPRAMOS
+                if (_inventory.IsShopInventory && !targetInventoryUI.IsShopInventory)
+                {
+                    _inventory.BuyItem(_item);
+                }
+                // Si arrastramos DESDE el inventario del jugador HACIA la tienda, entonces VENDEMOS
+                else if (!_inventory.IsShopInventory && targetInventoryUI.IsShopInventory)
+                {
+                    _inventory.SellItem(_item);
+                }
 
+                // Actualizamos ambas interfaces
                 _inventory.UpdateInventory();
                 targetInventoryUI.UpdateInventory();
 
+                // Destruimos el objeto arrastrado (el "slot clon" en caso de la tienda)
                 Destroy(gameObject);
                 return;
             }
         }
 
+        // Si no se soltó en un área válida, restauramos la posición original
         transform.SetParent(_parent);
         transform.localPosition = Vector3.zero;
     }
