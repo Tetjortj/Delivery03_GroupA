@@ -112,4 +112,30 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
+    public void SellItem(ItemBase item)
+    {
+        // Asegúrate de tener asignado el PlayerWallet
+        if (playerWallet == null)
+        {
+            Debug.LogError("❌ PlayerWallet no está asignado.");
+            return;
+        }
+
+        // Al vender, se otorga la mitad del costo original
+        int sellPrice = item.Cost / 2;
+        playerWallet.EarnMoney(sellPrice);
+
+        // Remueve el item del inventario del jugador
+        Inventory.RemoveItem(item);
+
+        // (Opcional) Agrega el item de vuelta al inventario de la tienda
+        InventoryUI shopInventoryUI = FindObjectsOfType<InventoryUI>().First(i => i.IsShopInventory);
+        shopInventoryUI.Inventory.AddItem(item);
+
+        // Actualiza la UI y el dinero mostrado
+        UpdateInventory();
+        playerWallet.UpdateMoneyUI();
+    }
+
+
 }

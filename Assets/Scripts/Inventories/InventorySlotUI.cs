@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     public Image Image;
     public TextMeshProUGUI AmountText;
@@ -14,6 +14,8 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     private ItemBase _item;
     private InventoryUI _inventory;
     private GraphicRaycaster _raycaster;
+    public Image highlightImage;
+    public static InventorySlotUI currentlySelectedSlot;
 
     public void Initialize(ItemSlot slot, InventoryUI inventory)
     {
@@ -85,6 +87,38 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         transform.SetParent(_parent);
         transform.localPosition = Vector3.zero;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        // Si ya hay un slot seleccionado y es distinto de este, deselecciónalo
+        if (currentlySelectedSlot != null && currentlySelectedSlot != this)
+        {
+            currentlySelectedSlot.SetHighlight(false);
+        }
+
+        // Si hacemos clic en el mismo slot que ya está seleccionado, lo deseleccionamos
+        if (currentlySelectedSlot == this)
+        {
+            SetHighlight(false);
+            currentlySelectedSlot = null;
+            Debug.Log("Deseleccionado: " + _item.name);
+        }
+        else
+        {
+            // Seleccionamos este slot
+            SetHighlight(true);
+            currentlySelectedSlot = this;
+            Debug.Log("Seleccionado: " + _item.name);
+        }
+    }
+
+    private void SetHighlight(bool active)
+    {
+        if (highlightImage != null)
+        {
+            highlightImage.enabled = active;
+        }
     }
 
 }
