@@ -6,7 +6,8 @@ public class InventoryUI : MonoBehaviour
 {
     public Inventory Inventory;             // Asigna el ScriptableObject correspondiente (Shop o Player) en el Inspector
     public InventorySlotUI SlotPrefab;        // Prefab para cada slot en la UI
-    public bool IsShopInventory;              // Indica si este UI es para la tienda
+    public bool IsShopInventory; // Indica si este UI es para la tienda
+    public PlayerWallet playerWallet;
 
     private List<GameObject> _shownObjects = new List<GameObject>();
 
@@ -80,4 +81,35 @@ public class InventoryUI : MonoBehaviour
         Inventory.RemoveItem(item);
         UpdateInventory();
     }
+
+    public void BuyItem(ItemBase item)
+    {
+        // Asegúrate de tener asignado el PlayerWallet
+        if (playerWallet == null)
+        {
+            Debug.LogError("❌ PlayerWallet no está asignado.");
+            return;
+        }
+
+        // Verifica que el jugador pueda costear el item
+        if (playerWallet.CanAfford(item.Cost))
+        {
+            // Descuenta el costo del dinero del jugador
+            playerWallet.SpendMoney(item.Cost);
+
+            // Agrega el item al inventario del jugador.
+            // Nota: No removemos el item de la tienda, ya que se supone que siempre debe estar visible.
+            InventoryUI playerInventoryUI = FindObjectsOfType<InventoryUI>().First(i => !i.IsShopInventory);
+            playerInventoryUI.Inventory.AddItem(item);
+
+            // Actualiza las interfaces
+            UpdateInventory();
+            playerWallet.UpdateMoneyUI();
+        }
+        else
+        {
+            Debug.Log("No tienes suficiente dinero para comprar este item.");
+        }
+    }
+
 }

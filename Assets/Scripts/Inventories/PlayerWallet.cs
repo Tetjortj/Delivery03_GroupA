@@ -1,29 +1,56 @@
 using UnityEngine;
+using TMPro;
 
 public class PlayerWallet : MonoBehaviour
 {
-    public int Money = 100; // Cantidad inicial de dinero
+    [SerializeField] private int money = 100;  // Dinero inicial del jugador
+    [SerializeField] private TMP_Text moneyText; // Referencia al texto UI que muestra el dinero
 
-    public bool CanAfford(int amount)
+    void Start()
     {
-        return Money >= amount;
+        UpdateMoneyUI();
     }
 
+    // Comprueba si el jugador puede costear un item
+    public bool CanAfford(int cost)
+    {
+        return money >= cost;
+    }
+
+    // Resta el dinero gastado y actualiza la UI
     public void SpendMoney(int amount)
     {
         if (CanAfford(amount))
         {
-            Money -= amount;
+            money -= amount;
+            Debug.Log("Dinero restante: " + money);
+            UpdateMoneyUI();
+        }
+        else
+        {
+            Debug.LogWarning("No hay suficiente dinero para gastar " + amount);
         }
     }
 
-    public void AddMoney(int amount)
+    // Suma el dinero ganado al vender y actualiza la UI
+    public void EarnMoney(int amount)
     {
-        Money += amount;
+        money += amount;
+        Debug.Log("Dinero después de vender: " + money);
+        UpdateMoneyUI();
     }
 
-    public int GetMoney()
+    // Actualiza el texto de la UI para mostrar el dinero actual
+    public void UpdateMoneyUI()
     {
-        return Money;
+        if (moneyText != null)
+        {
+            moneyText.text = "$" + money;
+            Debug.Log("Dinero actualizado: " + money);
+        }
+        else
+        {
+            Debug.LogError("moneyText no asignado en PlayerWallet");
+        }
     }
 }
