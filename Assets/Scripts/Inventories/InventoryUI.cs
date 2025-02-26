@@ -5,23 +5,20 @@ using System.Linq;
 
 public class InventoryUI : MonoBehaviour
 {
-    public Inventory Inventory;             // Asigna el ScriptableObject (Shop o Player) en el Inspector
-    public InventorySlotUI SlotPrefab;        // Prefab para cada slot en la UI
-    public bool IsShopInventory;              // Indica si este UI es para la tienda
-    public PlayerWallet playerWallet;         // Referencia al PlayerWallet (puedes asignarla o buscarla en Start)
+    public Inventory Inventory;        
+    public InventorySlotUI SlotPrefab;       
+    public bool IsShopInventory;         
+    public PlayerWallet playerWallet;    
 
-    // Botones para comprar o vender; asigna estos en el Inspector
     public Button buyButton;
     public Button sellButton;
 
-    // Slot seleccionado actualmente
     public InventorySlotUI selectedSlot;
 
     private List<GameObject> _shownObjects = new List<GameObject>();
 
     void Start()
     {
-        // Intenta encontrar el PlayerWallet si no está asignado manualmente
         if (playerWallet == null)
         {
             playerWallet = FindObjectOfType<PlayerWallet>();
@@ -31,7 +28,6 @@ public class InventoryUI : MonoBehaviour
             }
         }
 
-        // Para la tienda, usamos la copia runtime desde ShopManager y reseteamos
         if (IsShopInventory)
         {
             Inventory = FindObjectOfType<ShopManager>().shopInventoryRuntime;
@@ -39,7 +35,6 @@ public class InventoryUI : MonoBehaviour
         }
         else
         {
-            // Para el jugador, se asume que el Inventory se asigna en el Inspector
             Inventory.GetSlots().Clear();
         }
         ClearInventory();
@@ -102,7 +97,6 @@ public class InventoryUI : MonoBehaviour
         UpdateInventory();
     }
 
-    // Lógica para comprar un item (se ejecuta tanto desde drag como desde botón)
     public void BuyItem(ItemBase item)
     {
         if (!IsShopInventory) return;
@@ -113,7 +107,7 @@ public class InventoryUI : MonoBehaviour
         }
         if (playerWallet.CanAfford(item.Cost))
         {
-            playerWallet.SpendMoney(item.Cost);  // Descuenta el costo del item
+            playerWallet.SpendMoney(item.Cost); 
             FindObjectsOfType<InventoryUI>().First(i => !i.IsShopInventory).Inventory.AddItem(item);
             UpdateInventory();
             playerWallet.UpdateMoneyUI();
@@ -132,7 +126,7 @@ public class InventoryUI : MonoBehaviour
             Debug.LogError("❌ PlayerWallet no está asignado.");
             return;
         }
-        playerWallet.EarnMoney(item.Cost / 2);  // Acredita la mitad del costo
+        playerWallet.EarnMoney(item.Cost / 2); 
         Inventory.RemoveItem(item);
         FindObjectsOfType<InventoryUI>().First(i => i.IsShopInventory).Inventory.AddItem(item);
         UpdateInventory();
@@ -140,14 +134,12 @@ public class InventoryUI : MonoBehaviour
     }
 
 
-    // Se invoca cuando se selecciona un slot en la UI
     public void OnSlotSelected(InventorySlotUI slot)
     {
         selectedSlot = slot;
         UpdateActionButtons();
     }
 
-    // Actualiza la visibilidad de los botones según el tipo de inventario
     public void UpdateActionButtons()
     {
         if (IsShopInventory)
@@ -166,25 +158,20 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
-    // Método para que el botón de compra ejecute la acción sobre el slot seleccionado
-    // Método para el botón de compra
     public void OnBuyButtonClicked()
     {
         if (selectedSlot != null)
         {
-            // Llama a BuyItem, que dentro de su lógica descuenta el dinero
             BuyItem(selectedSlot.ItemRef);
             selectedSlot.ClearHighlight();
             selectedSlot = null;
         }
     }
 
-    // Método para el botón de venta
     public void OnSellButtonClicked()
     {
         if (selectedSlot != null)
         {
-            // Llama a SellItem, que dentro de su lógica acredita la wallet
             SellItem(selectedSlot.ItemRef);
             selectedSlot.ClearHighlight();
             selectedSlot = null;

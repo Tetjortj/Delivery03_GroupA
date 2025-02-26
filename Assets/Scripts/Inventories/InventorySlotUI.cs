@@ -15,14 +15,11 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     private InventoryUI _inventory;
     private GraphicRaycaster _raycaster;
 
-    // Objeto que se usará para resaltar el slot
     public Image highlightImage;
     public TextMeshProUGUI PriceText;
 
-    // Slot actualmente seleccionado (estático para poder deseleccionar el anterior)
     public static InventorySlotUI currentlySelectedSlot;
 
-    // Propiedades para que otros scripts puedan obtener la información del slot
     public ItemBase ItemRef { get { return _item; } }
     public InventoryUI InventoryRef { get { return _inventory; } }
 
@@ -63,7 +60,6 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             _raycaster = _canvas.GetComponent<GraphicRaycaster>();
         }
 
-        // Mueve el slot al Canvas para que se vea por encima
         transform.SetParent(_canvas.transform, true);
         transform.SetAsLastSibling();
     }
@@ -101,26 +97,22 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                 _inventory.UpdateInventory();
                 targetInventoryUI.UpdateInventory();
 
-                // Destruye el objeto arrastrado (en caso de ser un clon en la tienda)
                 Destroy(gameObject);
                 return;
             }
         }
 
-        // Si no se soltó en un área válida, vuelve a la posición original
         transform.SetParent(_parent);
         transform.localPosition = Vector3.zero;
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        // Si ya hay un slot seleccionado y es distinto de este, deselecciónalo
         if (currentlySelectedSlot != null && currentlySelectedSlot != this)
         {
             currentlySelectedSlot.SetHighlight(false);
         }
 
-        // Si se hace clic en el mismo slot seleccionado, se deselecciona
         if (currentlySelectedSlot == this)
         {
             SetHighlight(false);
@@ -133,7 +125,6 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             currentlySelectedSlot = this;
             Debug.Log("Seleccionado: " + _item.name);
 
-            // Notifica al InventoryUI que se ha seleccionado este slot
             if (_inventory != null)
             {
                 _inventory.OnSlotSelected(this);
@@ -149,7 +140,6 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         }
     }
 
-    // Método público para borrar el resaltado (útil al ejecutar la acción mediante botón)
     public void ClearHighlight()
     {
         SetHighlight(false);
