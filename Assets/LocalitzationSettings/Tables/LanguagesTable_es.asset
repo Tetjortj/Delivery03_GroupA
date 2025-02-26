@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 221793390555136
-    m_Localized: MI NUEVO MERCADO
+    m_Localized: MI NUEVO MERCADONA
     m_Metadata:
       m_Items: []
   - m_Id: 222008520601600
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 225980828479488
-    m_Localized: JUEGO NUEVO
+    m_Localized: Nueva Partida
     m_Metadata:
       m_Items: []
   references:
