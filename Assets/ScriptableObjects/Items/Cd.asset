@@ -15,3 +15,4 @@ MonoBehaviour:
   Name: Cd
   ImageUI: {fileID: 4496139036307049562, guid: 829cf6f9cc636ac4ca639a1278130d55, type: 3}
   IsStackable: 0
+  Cost: 15
