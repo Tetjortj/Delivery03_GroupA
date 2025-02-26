@@ -1,36 +1,50 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 
 public class InventoryUI : MonoBehaviour
 {
-    public Inventory Inventory;             // Asigna el ScriptableObject correspondiente (Shop o Player) en el Inspector
+    public Inventory Inventory;             // Asigna el ScriptableObject (Shop o Player) en el Inspector
     public InventorySlotUI SlotPrefab;        // Prefab para cada slot en la UI
-    public bool IsShopInventory; // Indica si este UI es para la tienda
-    public PlayerWallet playerWallet;
+    public bool IsShopInventory;              // Indica si este UI es para la tienda
+    public PlayerWallet playerWallet;         // Referencia al PlayerWallet (puedes asignarla o buscarla en Start)
+
+    // Botones para comprar o vender; asigna estos en el Inspector
+    public Button buyButton;
+    public Button sellButton;
+
+    // Slot seleccionado actualmente
+    public InventorySlotUI selectedSlot;
 
     private List<GameObject> _shownObjects = new List<GameObject>();
 
     void Start()
     {
-        playerWallet = FindObjectOfType<PlayerWallet>();
+        // Intenta encontrar el PlayerWallet si no está asignado manualmente
         if (playerWallet == null)
         {
-            Debug.LogError("❌ No se encontró un PlayerWallet en la escena.");
+            playerWallet = FindObjectOfType<PlayerWallet>();
+            if (playerWallet == null)
+            {
+                Debug.LogError("❌ No se encontró un PlayerWallet en la escena.");
+            }
         }
-        // Si es el inventario de la tienda, asigna la copia runtime desde ShopManager y resetea
+
+        // Para la tienda, usamos la copia runtime desde ShopManager y reseteamos
         if (IsShopInventory)
         {
             Inventory = FindObjectOfType<ShopManager>().shopInventoryRuntime;
-            Inventory.ResetInventory(); // Restaura a los valores originales del asset
+            Inventory.ResetInventory();
         }
         else
         {
-            // Inventario del jugador: se asume que está asignado en el Inspector y se vacía al inicio
+            // Para el jugador, se asume que el Inventory se asigna en el Inspector
             Inventory.GetSlots().Clear();
         }
         ClearInventory();
         FillInventory(Inventory);
+        UpdateActionButtons();
     }
 
     private void OnEnable()
@@ -47,6 +61,7 @@ public class InventoryUI : MonoBehaviour
     {
         ClearInventory();
         FillInventory(Inventory);
+        UpdateActionButtons();
     }
 
     private void ClearInventory()
@@ -87,30 +102,19 @@ public class InventoryUI : MonoBehaviour
         UpdateInventory();
     }
 
+    // Lógica para comprar un item (se ejecuta tanto desde drag como desde botón)
     public void BuyItem(ItemBase item)
     {
-        // Solo compramos si este UI es la tienda
         if (!IsShopInventory) return;
-
         if (playerWallet == null)
         {
             Debug.LogError("❌ PlayerWallet no está asignado.");
             return;
         }
-
-        // Verificamos que el jugador pueda costear el item
         if (playerWallet.CanAfford(item.Cost))
         {
-            // Descontamos el dinero
-            playerWallet.SpendMoney(item.Cost);
-
-            // Si quieres que el item NO desaparezca de la tienda, no lo quites:
-            // Inventory.RemoveItem(item);
-
-            // Agregamos el item al inventario del jugador
+            playerWallet.SpendMoney(item.Cost);  // Descuenta el costo del item
             FindObjectsOfType<InventoryUI>().First(i => !i.IsShopInventory).Inventory.AddItem(item);
-
-            // Refrescamos la interfaz
             UpdateInventory();
             playerWallet.UpdateMoneyUI();
         }
@@ -122,28 +126,69 @@ public class InventoryUI : MonoBehaviour
 
     public void SellItem(ItemBase item)
     {
-        // Solo vendemos si este UI es el inventario del jugador
         if (IsShopInventory) return;
-
         if (playerWallet == null)
         {
             Debug.LogError("❌ PlayerWallet no está asignado.");
             return;
         }
-
-        // Gana la mitad del coste
-        playerWallet.EarnMoney(item.Cost / 2);
-
-        // Remueve el item del inventario del jugador
+        playerWallet.EarnMoney(item.Cost / 2);  // Acredita la mitad del costo
         Inventory.RemoveItem(item);
-
-        // Lo añade al inventario de la tienda
         FindObjectsOfType<InventoryUI>().First(i => i.IsShopInventory).Inventory.AddItem(item);
-
-        // Refrescamos la interfaz
         UpdateInventory();
         playerWallet.UpdateMoneyUI();
     }
 
+
+    // Se invoca cuando se selecciona un slot en la UI
+    public void OnSlotSelected(InventorySlotUI slot)
+    {
+        selectedSlot = slot;
+        UpdateActionButtons();
+    }
+
+    // Actualiza la visibilidad de los botones según el tipo de inventario
+    public void UpdateActionButtons()
+    {
+        if (IsShopInventory)
+        {
+            if (buyButton != null)
+                buyButton.gameObject.SetActive(true);
+            if (sellButton != null)
+                sellButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            if (buyButton != null)
+                buyButton.gameObject.SetActive(false);
+            if (sellButton != null)
+                sellButton.gameObject.SetActive(true);
+        }
+    }
+
+    // Método para que el botón de compra ejecute la acción sobre el slot seleccionado
+    // Método para el botón de compra
+    public void OnBuyButtonClicked()
+    {
+        if (selectedSlot != null)
+        {
+            // Llama a BuyItem, que dentro de su lógica descuenta el dinero
+            BuyItem(selectedSlot.ItemRef);
+            selectedSlot.ClearHighlight();
+            selectedSlot = null;
+        }
+    }
+
+    // Método para el botón de venta
+    public void OnSellButtonClicked()
+    {
+        if (selectedSlot != null)
+        {
+            // Llama a SellItem, que dentro de su lógica acredita la wallet
+            SellItem(selectedSlot.ItemRef);
+            selectedSlot.ClearHighlight();
+            selectedSlot = null;
+        }
+    }
 
 }
