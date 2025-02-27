@@ -77,8 +77,24 @@ public class LocalizationManager : MonoBehaviour
         localizedTexts["title"] = new Dictionary<Language, string>()
     {
         { Language.English, "My new Mercadona" },
-        { Language.Spanish, "Mi nuevo mercadona: " },
+        { Language.Spanish, "Mi nuevo mercadona" },
         { Language.Catalan, "El meu nou mercadona" }
+    };
+
+        // Clave "use" (o "usar")
+        localizedTexts["start"] = new Dictionary<Language, string>()
+    {
+        { Language.English, "Start" },
+        { Language.Spanish, "Iniciar" },
+        { Language.Catalan, "Començar" }
+    };
+
+        // Clave "use" (o "usar")
+        localizedTexts["end"] = new Dictionary<Language, string>()
+    {
+        { Language.English, "The end" },
+        { Language.Spanish, "Final" },
+        { Language.Catalan, "Final" }
     };
 
         // Agrega aquí otras claves según necesites...
