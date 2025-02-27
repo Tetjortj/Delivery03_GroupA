@@ -8,7 +8,6 @@ public class LocalizationManager : MonoBehaviour
     public static LocalizationManager Instance;
     public Language currentLanguage = Language.English;
 
-    // Diccionario que mapea una clave a sus traducciones por idioma.
     private Dictionary<string, Dictionary<Language, string>> localizedTexts;
 
     public delegate void LanguageChanged();
@@ -30,10 +29,8 @@ public class LocalizationManager : MonoBehaviour
 
     private void LoadLocalization()
     {
-        // Inicializa el diccionario de textos localizados
         localizedTexts = new Dictionary<string, Dictionary<Language, string>>();
 
-        // Clave "welcome"
         localizedTexts["welcome"] = new Dictionary<Language, string>()
     {
         { Language.English, "Welcome" },
@@ -41,7 +38,6 @@ public class LocalizationManager : MonoBehaviour
         { Language.Catalan, "Benvingut" }
     };
 
-        // Clave "buy"
         localizedTexts["buy"] = new Dictionary<Language, string>()
     {
         { Language.English, "Buy" },
@@ -49,7 +45,6 @@ public class LocalizationManager : MonoBehaviour
         { Language.Catalan, "Comprar" }
     };
 
-        // Clave "sell"
         localizedTexts["sell"] = new Dictionary<Language, string>()
     {
         { Language.English, "Sell" },
@@ -57,7 +52,6 @@ public class LocalizationManager : MonoBehaviour
         { Language.Catalan, "Vendre" }
     };
 
-        // Clave "use" (o "usar")
         localizedTexts["use"] = new Dictionary<Language, string>()
     {
         { Language.English, "Use" },
@@ -65,7 +59,6 @@ public class LocalizationManager : MonoBehaviour
         { Language.Catalan, "Utilitzar" }
     };
 
-        // Clave "use" (o "usar")
         localizedTexts["money"] = new Dictionary<Language, string>()
     {
         { Language.English, "Money: " },
@@ -73,7 +66,6 @@ public class LocalizationManager : MonoBehaviour
         { Language.Catalan, "Diners: " }
     };
 
-        // Clave "use" (o "usar")
         localizedTexts["title"] = new Dictionary<Language, string>()
     {
         { Language.English, "My new Mercadona" },
@@ -81,7 +73,6 @@ public class LocalizationManager : MonoBehaviour
         { Language.Catalan, "El meu nou mercadona" }
     };
 
-        // Clave "use" (o "usar")
         localizedTexts["start"] = new Dictionary<Language, string>()
     {
         { Language.English, "Start" },
@@ -89,7 +80,6 @@ public class LocalizationManager : MonoBehaviour
         { Language.Catalan, "Començar" }
     };
 
-        // Clave "use" (o "usar")
         localizedTexts["end"] = new Dictionary<Language, string>()
     {
         { Language.English, "The end" },
@@ -97,7 +87,6 @@ public class LocalizationManager : MonoBehaviour
         { Language.Catalan, "Final" }
     };
 
-        // Agrega aquí otras claves según necesites...
     }
 
 
@@ -107,7 +96,7 @@ public class LocalizationManager : MonoBehaviour
         {
             return localizedTexts[key][currentLanguage];
         }
-        return key; // Si no se encuentra, devuelve la key
+        return key;
     }
 
     public void SetLanguage(Language lang)

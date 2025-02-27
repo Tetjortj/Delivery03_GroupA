@@ -4,7 +4,6 @@ using UnityEngine;
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class LocalizedText : MonoBehaviour
 {
-    // La clave para obtener la traducción (por ejemplo, "welcome")
     public string key;
 
     private TextMeshProUGUI textComponent;
